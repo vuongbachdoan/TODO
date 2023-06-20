@@ -1,0 +1,25 @@
+.animate--dual-ring {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.animate--dual-ring:after {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid #b97509;
+  border-color: #b97509 transparent #b97509 transparent;
+  animation: animate--dual-ring 1.2s linear infinite;
+}
+@keyframes animate--dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
